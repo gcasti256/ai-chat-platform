@@ -1,0 +1,34 @@
+{
+  "name": "ai-chat-platform",
+  "version": "1.0.0",
+  "description": "Real-time AI chat platform with multi-model support, streaming responses, and prompt engineering tools",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "nextjs",
+    "typescript",
+    "streaming"
+  ],
+  "author": "George Castillo",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.0.0",
+    "better-sqlite3": "^12.8.0",
+    "next": "^15.1.0",
+    "postcss": "^8.5.8",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.9.3"
+  }
+}
