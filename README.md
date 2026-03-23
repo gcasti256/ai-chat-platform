@@ -1,10 +1,18 @@
 # AI Chat Platform
 
-A real-time AI chat application with streaming responses, multi-model support, conversation persistence, and a prompt engineering sandbox.
-
-![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat-square)
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?style=flat-square)
+![Build](https://github.com/gcasti256/ai-chat-platform/actions/workflows/ci.yml/badge.svg)
+![Next.js](https://img.shields.io/badge/Next.js-15-black?style=flat-square&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue?style=flat-square&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-339933?style=flat-square&logo=node.js&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+
+A real-time AI chat application with streaming responses, multi-model support, conversation persistence, and a prompt engineering sandbox. Switch between OpenAI and Anthropic models on the fly, customize system prompts with quick presets, and watch responses stream in token by token -- all backed by a local SQLite database for zero-config persistence.
+
+## Demo
+
+<!-- Add screenshot here -->
+<!-- ![AI Chat Platform](docs/screenshot.png) -->
+_Screenshot: paste a browser capture of the chat interface into `docs/screenshot.png` and uncomment the line above._
 
 ## Features
 
@@ -18,7 +26,7 @@ A real-time AI chat application with streaming responses, multi-model support, c
 
 | Layer | Tech |
 |-------|------|
-| Framework | Next.js 16 (App Router) |
+| Framework | Next.js 15 (App Router) |
 | Language | TypeScript (strict) |
 | Styling | Tailwind CSS v4 |
 | Database | SQLite (better-sqlite3) |
@@ -35,7 +43,7 @@ A real-time AI chat application with streaming responses, multi-model support, c
 ### Installation
 
 ```bash
-git clone https://github.com/georgecastillo/ai-chat-platform.git
+git clone https://github.com/gcasti256/ai-chat-platform.git
 cd ai-chat-platform
 npm install
 cp .env.example .env.local
@@ -59,6 +67,7 @@ src/
 ├── components/
 │   ├── ChatView.tsx                # Main chat orchestrator
 │   ├── ChatMessage.tsx             # Message bubble component
+│   ├── ClientChat.tsx              # Client-side chat wrapper
 │   ├── Sidebar.tsx                 # Conversation list
 │   └── PromptPanel.tsx             # Settings/prompt panel
 └── lib/
@@ -75,4 +84,4 @@ src/
 
 ## License
 
-MIT
+MIT -- George Castillo
